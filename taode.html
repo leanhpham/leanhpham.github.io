@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="resources/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="resources/css/style.css">
+	<link rel="stylesheet" href="resources/fontawesome-free-5.0.8/web-fonts-with-css/css/fontawesome-all.min.css">
+</head>
+<body>
+	<header id="header">
+		<div class="header-top">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-6 header-top-left">
+						<div class="list-info">
+							<ul>
+								<li>
+									<i class="fas fa-phone top-icon"></i>
+									+123 456 789
+									
+								</li>
+								<li>
+									<i class="fa fa-envelope top-icon"></i>
+									abcdef@gmail.com
+									
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-6 header-top-right">
+						<div class="list-info">
+							<ul>
+								<li>
+									<a href="#">
+										<i class="fa fa-user-plus top-icon"></i>
+										Sign up
+										
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="fa fa-lock top-icon"></i>
+										Login
+										
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="menu1">
+		<ul>
+			<li><a href="nganhangcauhoi.html">Ngân hàng câu hỏi</a></li>
+			<li><a href="themcauhoi.html">Tạo câu hỏi</a></li>
+			<li><a class="active" href="taode.html">Tạo đề và trộn đề</a></li>
+			<li><a href="nganhangde.html">Ngân hàng đề thi</a></li>
+		</ul>
+	</div>
+	<div class="tab">
+		<button class="tablinks" onclick="chonnganh(event, 'CNTT')">Công Nghệ Thông Tin</button>
+		<button class="tablinks" onclick="chonnganh(event, 'KT')">Kinh Tế</button>
+		<button class="tablinks" onclick="chonnganh(event, 'NNA')">Ngôn Ngữ Anh</button>
+	</div>
+
+
+	<!-- Tab content -->
+	<div class="main1">
+		<div class="row">
+			<div class="col-md-2">
+				<div id="CNTT" class="tabcontent">
+					<div class="tab1">
+						<button class="tablinks1" onclick="chonmon(event, '1')">Môn 1</button>
+						<button class="tablinks1" onclick="chonmon(event, '2')">Môn 2</button>
+						<button class="tablinks1" onclick="chonmon(event, '3')">Môn 3</button>
+					</div>
+				</div>
+
+				<div id="KT" class="tabcontent">
+					<div class="tab1">
+						<button class="tablinks1" onclick="chonmon(event, '1')">Môn 1</button>
+						<button class="tablinks1" onclick="chonmon(event, '2')">Môn 2</button>
+						<button class="tablinks1" onclick="chonmon(event, '3')">Môn 3</button>
+					</div>
+				</div>
+
+				<div id="NNA" class="tabcontent">
+					<div class="tab1">
+						<button class="tablinks1" onclick="chonmon(event, '1')">Môn 1</button>
+						<button class="tablinks1" onclick="chonmon(event, '2')">Môn 2</button>
+						<button class="tablinks1" onclick="chonmon(event, '3')">Môn 3</button>
+					</div>
+				</div>
+				
+			</div>
+			<div class="col-md-10">
+				<div id="1" class="tabcontent1">
+					<div class="alert alert-success thongbao">
+						<h5>Thành công</h5>
+					</div>
+					<div class="alert alert-danger thongbao">
+						<h5>Thất bại</h5>
+					</div>
+					<table>
+						<tr>
+							<td>
+								Chương
+							</td>
+							<td>
+								Số câu hỏi dễ
+							</td>
+							<td>
+								Số câu hỏi trung bình
+							</td>
+							<td>
+								Số câu hỏi khó
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Chương 1
+							</td>
+							<td>
+								50
+							</td>
+							<td>
+								20
+							</td>
+							<td>
+								10
+							</td>
+						</tr>
+						
+					</table>
+					<label for="">Chọn số câu hỏi</label>
+					<select name="dapan" size="2" class="sl" multiple>
+						<option value="20">20</option>
+						<option value="25">30</option>
+						<option value="30">40</option>
+						<option value="40">50</option>
+					</select>
+					<br>
+					<span>Chọn số lượng câu hỏi trong từng chương</span>
+					<br>
+					<form action="">
+						<table>
+							<tr>
+								<td>
+									Chương
+								</td>
+								<td>
+									Số câu hỏi dễ
+								</td>
+								<td>
+									Số câu hỏi trung bình
+								</td>
+								<td>
+									Số câu hỏi khó
+								</td>
+							</tr>
+							<tr>
+								<td>
+									Chương 1
+								</td>
+								<td>
+									<input type="text" name="">
+								</td>
+								<td>
+									<input type="text" name="">
+								</td>
+								<td>
+									<input type="text" name="">
+								</td>
+							</tr>
+
+						</table>
+						<label for="">Nhập mã đề</label>
+						<input type="text">
+						<label for="">Số đề hoán vị cần tạo</label>
+						<input type="text">
+						<input type="submit" value="Tạo đề" class="btn">
+					</form>
+					
+
+				</div>
+				<div id="2" class="tabcontent1">
+					<h3>2</h3>
+				</div>
+				<div id="3" class="tabcontent1">
+					<h3>3</h3>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+
+	
+
+
+
+	<script>
+		function chonnganh(evt, cityName) {
+    // Declare all variables
+    var i, tabcontent, tablinks,tabcontent1;
+
+    // Get all elements with class="tabcontent" and hide them
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+    	tabcontent[i].style.display = "none";
+    }
+
+
+    // Get all elements with class="tablinks" and remove the class "active"
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+    	tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+    // Show the current tab, and add an "active" class to the button that opened the tab
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+</script>
+<script>
+	function chonmon(evt, cityName) {
+    // Declare all variables
+    var i, tabcontent1, tablinks1;
+
+    // Get all elements with class="tabcontent" and hide them
+    tabcontent1 = document.getElementsByClassName("tabcontent1");
+    for (i = 0; i < tabcontent1.length; i++) {
+    	tabcontent1[i].style.display = "none";
+    }
+
+
+    // Get all elements with class="tablinks" and remove the class "active"
+    tablinks1 = document.getElementsByClassName("tablinks1");
+    for (i = 0; i < tablinks1.length; i++) {
+    	tablinks1[i].className = tablinks1[i].className.replace(" active", "");
+    }
+
+    // Show the current tab, and add an "active" class to the button that opened the tab
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+</script>
+</body>
+</html>
